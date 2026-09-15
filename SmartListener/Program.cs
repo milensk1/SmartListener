@@ -76,7 +76,7 @@ namespace DemoService
                 while (true)
                 {
                     var request = await reader.ReadLineAsync();
-                    if (request == null) break; // Client closed connection
+                    if (request == null) break; // Client closed the connection
 
                     FileWriter(request);
                 }
